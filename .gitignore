@@ -1,0 +1,13 @@
+/vsProj/.vs/vsProj/v15/*.suo
+/vsProj/.vs/vsProj/v15/*.db
+/vsProj/.vs/vsProj/v15/*.opendb
+/vsProj/.vs/vsProj/v15/ipch/AutoPCH/22e3e14cd1c93d43/*.ipch
+/vsProj/Debug/*.exe
+/vsProj/Debug/*.ilk
+/vsProj/Debug/*.pdb
+/vsProj/vsProj/Debug/*.obj
+/vsProj/vsProj/Debug/*.idb
+/vsProj/vsProj/Debug/*.pdb
+/vsProj/vsProj/Debug/*.log
+/vsProj/vsProj/Debug/vsProj.tlog/*.tlog
+/vsProj/vsProj/Debug/vsProj.tlog/*.lastbuildstate
