@@ -11,3 +11,5 @@
 /vsProj/vsProj/Debug/*.log
 /vsProj/vsProj/Debug/vsProj.tlog/*.tlog
 /vsProj/vsProj/Debug/vsProj.tlog/*.lastbuildstate
+/vsProj/.vs/vsProj/v15/ipch/AutoPCH/3cd7661cb33a7868/*.ipch
+/vsProj/vsProj/Debug/*.enc
