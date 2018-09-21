@@ -60,7 +60,7 @@ void thread_procc()
 }
 
 //main
-#if 1
+#if 0
 int main()
 {
 	thread_countt = 2;
