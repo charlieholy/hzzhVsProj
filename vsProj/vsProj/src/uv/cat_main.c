@@ -21,15 +21,19 @@ static char buffer[1024];
 static uv_buf_t iov;
 
 void on_write(uv_fs_t *req) {
+#if 0
+	printf("on write\n");
     if (req->result < 0) {
         fprintf(stderr, "Write error: %s\n", uv_strerror((int)req->result));
     }
     else {
         uv_fs_read(uv_default_loop(), &read_req, open_req.result, &iov, 1, -1, on_read);
     }
+#endif
 }
 
 void on_read(uv_fs_t *req) {
+	printf("on read\n");
     if (req->result < 0) {
         fprintf(stderr, "Read error: %s\n", uv_strerror(req->result));
     }
@@ -40,13 +44,14 @@ void on_read(uv_fs_t *req) {
     }
     else if (req->result > 0) {
         iov.len = req->result;
-        uv_fs_write(uv_default_loop(), &write_req, 1, &iov, 1, -1, on_write);
+        uv_fs_write(uv_default_loop(), &write_req, 2, &iov, 1, -1, on_write);
     }
 }
 
 void on_open(uv_fs_t *req) {
     // The request passed to the callback is the same as the one the call setup
     // function was passed.
+	printf("on open\n");
     assert(req == &open_req);
     if (req->result >= 0) {
         iov = uv_buf_init(buffer, sizeof(buffer));
