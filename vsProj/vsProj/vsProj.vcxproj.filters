@@ -4,6 +4,9 @@
     <Filter Include="src">
       <UniqueIdentifier>{422cbdb8-993f-49b8-9d87-29769840e222}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\jdk">
+      <UniqueIdentifier>{a422b4f3-29a1-450f-a4e4-02f67e87e4de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\sync.cpp">
@@ -15,5 +18,16 @@
     <ClCompile Include="src\lambda.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\jdk\debug.c">
+      <Filter>src\jdk</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jdk\main.c">
+      <Filter>src\jdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\jdk\debug.h">
+      <Filter>src\jdk</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

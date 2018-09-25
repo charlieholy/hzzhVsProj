@@ -115,9 +115,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\jdk\debug.c" />
+    <ClCompile Include="src\jdk\main.c" />
     <ClCompile Include="src\lambda.cpp" />
     <ClCompile Include="src\sync.cpp" />
     <ClCompile Include="src\syncc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\jdk\debug.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
